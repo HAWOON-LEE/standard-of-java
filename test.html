@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+
+<style>
+    table {
+        border-collapse: collapse;
+    }
+
+    thead {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    tbody {
+        border-bottom: 1px solid black;
+    }
+
+    tbody tr:nth-of-type(odd) {
+        background-color: #ececec;
+    }
+
+    tbody tr:hover {
+        background-color: #dddddd;
+    }
+</style>
+
+<body>
+    <table>
+        <colgroup>
+            <col style="width:80px">
+            <col style="width:240px">
+            <col style="width:120px">
+            <col style="width:120px">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>일자</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>5</td>
+                <td>공지사항 1</td>
+                <td>admin</td>
+                <td>03/10</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>게시판입니다</td>
+                <td>admin</td>
+                <td>03/09</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>HTML/CSS</td>
+                <td>admin</td>
+                <td>03/09</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>환영합니다</td>
+                <td>admin</td>
+                <td>03/08</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>안녕하세요</td>
+                <td>admin</td>
+                <td>03/08</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button id="btn">클릭하세요</button>
+
+    <script>
+        var button = document.getElementsByClassName('btn');
+        button.addEventListener('mouseover', function () {
+            console.log('버튼이 클릭되었습니다.');
+        });
+    </script>
+</body>
+
+</html>
